@@ -30,4 +30,19 @@ describe('fizz buzz', function(){
     done();
   })
 
+  it('should return fizz for 6', function(done){
+	assert.equal(fizz.fizzer(6), 'fizz', 'return fizz for 6');
+    done();
+  })  
+
+  it('should return buzz for 10', function(done){
+	assert.equal(fizz.fizzer(10), 'buzz', 'return buzz for 10');
+    done();
+  })
+
+  it('should return fizzbuzz for 15', function(done){
+	assert.equal(fizz.fizzer(15), 'fizzbuzz', 'return fizzbuzz for 15');
+    done();
+  })
+
 })
